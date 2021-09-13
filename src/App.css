@@ -21,6 +21,7 @@ body {
   height: 2rem;
   margin-left: 47rem;
   margin-top: 2rem;
+  padding-left: 1rem;
 }
 #pass-input {
   border-radius: 0.5rem;
@@ -28,6 +29,7 @@ body {
   height: 2rem;
   margin-left: 47rem;
   margin-top: 2rem;
+  padding-left: 1rem;
 }
 form {
   width: 100%;
