@@ -8,7 +8,7 @@ function App() {
           <input type='email' placeholder='youremail' id='email-input'></input>
           <input
             type='password'
-            placeholder='your pass'
+            placeholder='yourpass'
             id='pass-input'
           ></input>
         </form>

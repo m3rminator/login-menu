@@ -67,6 +67,8 @@ body {
   width: 20rem;
   height: 2rem;
   padding-left: 0.5rem;
+  background-color: rgb(49, 45, 45);
+  border: none;
 }
 #pass-input {
   border-radius: 0.5rem;
@@ -74,6 +76,8 @@ body {
   height: 2rem;
   margin-top: 0.5rem;
   padding-left: 0.5rem;
+  background-color: rgb(49, 45, 45);
+  border: none;
 }
 form {
   width: 100%;
