@@ -1,15 +1,19 @@
-
 import './App.css';
 function App() {
-
   return (
-    <>
-    <h1 id="h1">login</h1>
-    <form>
-  <input type="email" placeholder="youremail" id="email-input"></input>
-  <input type="password" placeholder="your pass" id="pass-input"></input>
-  </form>
-  </>
-    );
+    <div className='navid-container'>
+      <div className='navid-wrapper'>
+        <h1 id='h1'>Login</h1>
+        <form className='navid-form'>
+          <input type='email' placeholder='youremail' id='email-input'></input>
+          <input
+            type='password'
+            placeholder='your pass'
+            id='pass-input'
+          ></input>
+        </form>
+      </div>
+    </div>
+  );
 }
 export default App;
