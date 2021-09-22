@@ -11,7 +11,7 @@ function App() {
             placeholder='yourpass'
             id='pass-input'
           ></input>
-         <button type="submit" className='login-button'>login</button>
+         <input type="submit" placeholder="login" className='login-button'></input>
         </form>
       </div>
     </div>
