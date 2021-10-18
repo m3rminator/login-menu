@@ -3,6 +3,7 @@
   width: 100%;
   text-align: center;
 }
+
 body {
   width: 100%;
   height: 100%;
@@ -62,6 +63,7 @@ body {
     ),
     linear-gradient(135deg, #670d10 0%, #092756 100%);
 }
+
 #email-input {
   border-radius: 0.5rem;
   width: 20rem;
@@ -69,7 +71,9 @@ body {
   padding-left: 0.5rem;
   background-color: rgb(49, 45, 45);
   border: none;
+  color: white;
 }
+
 #pass-input {
   border-radius: 0.5rem;
   width: 20rem;
@@ -78,7 +82,19 @@ body {
   padding-left: 0.5rem;
   background-color: rgb(49, 45, 45);
   border: none;
+  color: white;
 }
+#confirm-pass-input {
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: rgb(49, 45, 45);
+  border: none;
+  color: white;
+}
+
 form {
   width: 100%;
   height: 100%;
@@ -113,4 +129,14 @@ form {
   margin-top: 0.5rem;
   padding-left: 0.5rem;
   border: none;
+}
+.register {
+  color: aliceblue;
+  margin-top: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.login-button:disabled{
+  background-color: rgb(24, 20, 20);
 }
