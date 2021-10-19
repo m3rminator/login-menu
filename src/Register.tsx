@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './App.css';
-
+import styled from 'styled-components'
 
 function About() {
 
@@ -14,17 +14,13 @@ function About() {
     };
 
 
-    console.log('password=', password)
-    console.log('confirmpassword=', confirmpassword)
-    console.log('password compare=', password === confirmpassword)
-
     return (
-        <div className='navid-container'>
-            <div className='navid-wrapper'>
-                <h1 id='h1'>Register</h1>
-                <form className='navid-form'>
+        <Container>
+            <Wrapper>
+                <H1>Register</H1>
+                <Form>
 
-                    <input type='email' placeholder='your email' id='email-input' ></input>
+                    <Input type='email' placeholder='your email' required></Input>
 
                     <input type='password' placeholder='your password' id='pass-input' required value={password}
                         onChange={onChangePassword}></input>
@@ -33,11 +29,46 @@ function About() {
                         value={confirmpassword} onChange={onChangeConfirmpassword}></input>
 
                     <input type="submit" placeholder="login" className='login-button' disabled={password !== confirmpassword || password === ""}></input>
-                </form>
-            </div>
-        </div>
+                </Form>
+            </Wrapper>
+        </Container>
     )
 }
 
 
 export default About
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+`
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`
+const H1 = styled.h1`
+  color: aliceblue;
+  width: 100%;
+  text-align: center;
+`
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+const Input = styled.input`
+border-radius: 0.5rem;
+width: 20rem;
+height: 2rem;
+padding-left: 0.5rem;
+background-color: rgb(49, 45, 45);
+border: none;
+color: white;
+`
