@@ -4,35 +4,36 @@ import styled from 'styled-components'
 
 function About() {
 
-    const [password, setPassword] = useState<string>("");
-    const onChangePassword = (event: any) => {
-        setPassword(event.target.value);
-    };
-    const [confirmpassword, setConfirmpassword] = useState<string>("");
-    const onChangeConfirmpassword = (event: any) => {
-        setConfirmpassword(event.target.value);
-    };
+  const [password, setPassword] = useState<string>("");
+  const onChangePassword = (event: any) => {
+    setPassword(event.target.value);
+  };
+
+  const [confirmpassword, setConfirmpassword] = useState<string>("");
+  const onChangeConfirmpassword = (event: any) => {
+    setConfirmpassword(event.target.value);
+  };
 
 
-    return (
-        <Container>
-            <Wrapper>
-                <H1>Register</H1>
-                <Form>
+  return (
+    <Container>
+      <Wrapper>
+        <H1>Register</H1>
+        <Form>
 
-                    <Input type='email' placeholder='your email' required></Input>
+          <Emailinput type="email" placeholder='your email' required></Emailinput>
 
-                    <input type='password' placeholder='your password' id='pass-input' required value={password}
-                        onChange={onChangePassword}></input>
+          <Passinput type='password' placeholder='your password' required value={password}
+            onChange={onChangePassword}></Passinput>
 
-                    <input type='password' placeholder='confirm your password' id='confirm-pass-input' required
-                        value={confirmpassword} onChange={onChangeConfirmpassword}></input>
+          <Confirmpassinput type='password' placeholder='confirm your password' required
+            value={confirmpassword} onChange={onChangeConfirmpassword}></Confirmpassinput>
 
-                    <input type="submit" placeholder="login" className='login-button' disabled={password !== confirmpassword || password === ""}></input>
-                </Form>
-            </Wrapper>
-        </Container>
-    )
+          <Button type="submit" placeholder="login" disabled={password !== confirmpassword || password === ""}></Button>
+        </Form>
+      </Wrapper>
+    </Container>
+  )
 }
 
 
@@ -63,7 +64,7 @@ const Form = styled.form`
   justify-content: center;
   align-items: center;
 `
-const Input = styled.input`
+const Emailinput = styled.input`
 border-radius: 0.5rem;
 width: 20rem;
 height: 2rem;
@@ -71,4 +72,37 @@ padding-left: 0.5rem;
 background-color: rgb(49, 45, 45);
 border: none;
 color: white;
+`
+const Passinput = styled.input`
+border-radius: 0.5rem;
+  width: 20rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: rgb(49, 45, 45);
+  border: none;
+  color: white;
+`
+const Confirmpassinput = styled.input`
+border-radius: 0.5rem;
+  width: 20rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: rgb(49, 45, 45);
+  border: none;
+  color: white;
+`
+const Button = styled.input`
+background-color: green;
+color: aliceblue;
+border-radius: 0.5rem;
+width: 20.5rem;
+height: 2rem;
+margin-top: 0.5rem;
+padding-left: 0.5rem;
+border: none;
+:disabled{
+  background-color: rgb(24, 20, 20);
+}
 `
