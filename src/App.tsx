@@ -1,19 +1,19 @@
-import { render } from '@testing-library/react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import Register from './routes';
-import Form from './Login';
-import About from './Register'
-import styled from 'styled-components';
+import Login from './pages/Login';
+import Register from './pages/Register'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Main from './pages/Main';
+import styled from 'styled-components/macro';
 
 function App() {
   return (
     <Routingdevice>
       <Router>
-        <Register />
         <Switch>
-          <Route exact path='/About' component={About} />
-          <Route exact path='/' component={Form} />
+          <Route exact path='/Register' component={Register} />
+          <Route exact path='/Login' component={Login} />
+          <Route exact path='/' component={Main} />
         </Switch>
       </Router>
     </Routingdevice>
