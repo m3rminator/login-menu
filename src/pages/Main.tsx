@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from 'styled-components/macro';
 import Header from "../component/Header";
 import Footer from "../component/Footer";
 import Hero from "../component/Hero";
 import ContentBox from "../component/ContentBox";
-import data from "../data";
+import {articleData} from "../data";
 import AdCard from "../component/AdCard";
 
 
 function Main() {
-    const Content = data.map(item => {
+    const Content = articleData.map(item => {
         return (
             <ContentBox
                 key={item.id}

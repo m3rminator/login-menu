@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../App.css';
 import styled from 'styled-components/macro'
-import { NavLink, Switch, Route, BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { IoChevronBackOutline } from "react-icons/io5";
 
 function Register() {

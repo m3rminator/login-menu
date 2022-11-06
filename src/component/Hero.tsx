@@ -8,13 +8,13 @@ function Hero() {
         <Car>
             <Carousel>
                 <Img>
-                    <img src="ds3slider.jpg" />
+                    <img src="ds3slider.jpg" alt="" />
                 </Img>
                 <Img>
-                    <img src="t620x300-f14ace8d792c9f235b86811c5f3afafa.jpg" />
+                    <img src="t620x300-f14ace8d792c9f235b86811c5f3afafa.jpg" alt="" />
                 </Img>
                 <Img>
-                    <img src="sifu.jpg" />
+                    <img src="sifu.jpg" alt="" />
                 </Img>
             </Carousel>
         </Car>

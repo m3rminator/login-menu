@@ -2,7 +2,6 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Login from './pages/Login';
 import Register from './pages/Register'
-import { Swiper, SwiperSlide } from 'swiper/react';
 import Main from './pages/Main';
 import styled from 'styled-components/macro';
 
