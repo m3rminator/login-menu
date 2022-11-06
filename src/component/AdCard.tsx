@@ -4,7 +4,7 @@ import styled from 'styled-components/macro';
 function AdCard() {
     return (
         <Container>
-            <H1>Your Ad Here</H1>
+            <H1>Mobin Shahini</H1>
         </Container>
     )
 }
